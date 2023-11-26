@@ -1,0 +1,55 @@
+/* Custom Styles for index.html */
+
+body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+}
+
+.left-half {
+    background-color: #0c4a0c;
+    /* Green background for the left half */
+    flex: 1;
+    /* Take up 50% of the width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right-half {
+    background-color: #f3eded;
+    /* Black background for the right half */
+    flex: 1;
+    /* Take up 50% of the width */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    padding: 20px;
+    border-radius: 10px;
+    /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Box shadow for depth */
+    text-align: center;
+}
+
+.container h1 {
+    color: rgb(171, 171, 17);
+    /* Yellow color for the h1 element */
+    font-size: 4em;
+    /* Adjust font size as needed */
+}
+
+.container a {
+    color: #116111;
+    /* Green color for the links */
+    text-decoration: underline;
+    /* Add underline to links */
+}
+
+.container p {
+    color: #000000;
+    /* Black color for other paragraphs */
+}

@@ -1,0 +1,76 @@
+/* Custom Styles for login.html */
+
+body {
+    margin: 0;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    /* Prevent scrolling */
+    background: linear-gradient(114.3deg, rgb(19, 126, 57) 0.2%, rgb(8, 65, 91) 68.5%);
+    padding-left: 39%;
+}
+
+.center-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-wrap {
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Slightly transparent white background for the form */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-wrap h1 {
+    color: #000000;
+    font-size: 2.5em;
+}
+
+.form-wrap label {
+    color: #000000;
+    font-weight: bold;
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-wrap input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    outline: none;
+}
+
+.form-wrap button {
+    background: linear-gradient(114.3deg, rgb(19, 126, 57) 0.2%, rgb(8, 65, 91) 68.5%);
+    color: #FFFFFF;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form-wrap button:hover {
+    background: linear-gradient(114.3deg, rgb(8, 65, 91) 0.2%, rgb(19, 126, 57) 68.5%);
+}
+
+.form-content {
+    max-width: 400px;
+    width: 100%;
+}
