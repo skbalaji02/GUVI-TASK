@@ -17,7 +17,7 @@ if (isset($_SESSION['stname'])) {
     if (mysqli_connect_errno()) {
         die("Connection error: " . mysqli_connect_error());
     } else {
-        // Check if additional details are already present
+        
         $sql = "SELECT dob, fullname, fav_colour, fav_subject FROM user_credentials WHERE stname=?";
         $stmt = $conn->prepare($sql);
         $stmt->bind_param("s", $stname);
@@ -31,7 +31,7 @@ if (isset($_SESSION['stname'])) {
             $fav_colour = $row['fav_colour'] ? $row['fav_colour'] : "Not provided";
             $fav_subject = $row['fav_subject'] ? $row['fav_subject'] : "Not provided";
         } else {
-            // User details not found
+            
             $dob = "Not provided";
             $fullname = "Not provided";
             $fav_colour = "Not provided";
@@ -42,7 +42,7 @@ if (isset($_SESSION['stname'])) {
         $conn->close();
     }
 } else {
-    // User not logged in - redirect to login
+    
     header("Location: login.html");
     exit();
 }
@@ -55,7 +55,7 @@ if (isset($_SESSION['stname'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Dashboard</title>
     <style>
-        /* Custom Styles for user_dashboard.php */
+       
 
         body {
             margin: 0;
