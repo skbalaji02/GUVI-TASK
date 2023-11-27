@@ -1,11 +1,11 @@
-/* Custom Styles for register.html */
+
 
 body {
     margin: 0;
     display: flex;
     height: 100vh;
     background: linear-gradient(114.3deg, rgb(19, 126, 57) 0.2%, rgb(8, 65, 91) 68.5%);
-    /* Updated gradient background */
+    
 }
 
 .center-container {
@@ -17,7 +17,7 @@ body {
 
 .form-wrap {
     background-color: rgba(255, 255, 255, 0.8);
-    /* Slightly transparent white background for the form */
+    
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
@@ -29,14 +29,14 @@ body {
 
 .form-wrap h1 {
     color: #000000;
-    /* Black color for the h1 element */
+   
     font-size: 2.5em;
-    /* Increase font size to make it larger */
+   
 }
 
 .form-wrap label {
     color: #000000;
-    /* Black color for the labels */
+   
     font-weight: bold;
     display: block;
     text-align: left;
@@ -59,9 +59,9 @@ body {
 
 .form-wrap button {
     background: linear-gradient(114.3deg, rgb(19, 126, 57) 0.2%, rgb(8, 65, 91) 68.5%);
-    /* Gradient background for the button, matching the specified values */
+    
     color: #FFFFFF;
-    /* White color for the text on the button */
+   
     padding: 12px 20px;
     border: none;
     border-radius: 5px;
@@ -71,14 +71,14 @@ body {
 
 .form-wrap button:hover {
     background: linear-gradient(114.3deg, rgb(8, 65, 91) 0.2%, rgb(19, 126, 57) 68.5%);
-    /* Gradient background on hover with reversed colors */
+    
 }
 
 .footer-text {
     text-align: center;
     margin-top: 20px;
     color: #000000;
-    /* Black color for the footer text */
+   
 }
 
 .footer-text a {
