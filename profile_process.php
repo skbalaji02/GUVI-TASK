@@ -18,7 +18,7 @@ if (isset($_SESSION['stname'])) {
         if (mysqli_connect_errno()) {
             die("Connection error: " . mysqli_connect_error());
         } else {
-            // Update user details in the database
+            
             $new_dob = $_POST['new_dob'];
             $new_fullname = $_POST['new_fullname'];
             $new_fav_colour = $_POST['new_fav_colour'];
@@ -30,7 +30,7 @@ if (isset($_SESSION['stname'])) {
             $stmt->execute();
             $stmt->close();
 
-            // Fetch updated details
+            
             $sql_fetch = "SELECT dob, fullname, fav_colour, fav_subject FROM user_credentials WHERE stname=?";
             $stmt_fetch = $conn->prepare($sql_fetch);
             $stmt_fetch->bind_param("s", $stname);
@@ -44,7 +44,7 @@ if (isset($_SESSION['stname'])) {
                 $fav_colour = $row_fetch['fav_colour'] ? $row_fetch['fav_colour'] : "Not provided";
                 $fav_subject = $row_fetch['fav_subject'] ? $row_fetch['fav_subject'] : "Not provided";
             } else {
-                // User details not found
+               
                 $dob = "Not provided";
                 $fullname = "Not provided";
                 $fav_colour = "Not provided";
@@ -56,7 +56,7 @@ if (isset($_SESSION['stname'])) {
         }
     }
 } else {
-    // User not logged in - redirect to login
+    
     header("Location: login.html");
     exit();
 }
@@ -70,7 +70,7 @@ if (isset($_SESSION['stname'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Dashboard</title>
     <style>
-        /* Custom Styles for profile_process.php */
+        
         body {
             margin: 0;
             display: flex;
