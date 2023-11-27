@@ -126,17 +126,17 @@ if (isset($_SESSION['stname'])) {
 <body>
     <h2>User Dashboard</h2>
     <form action="profile_process.php" method="POST">
-        <label for="new_dob">New Date of Birth:</label>
-        <input type="date" id="new_dob" name="new_dob"><br>
+        <label for="new_dob">Date of Birth:</label>
+        <input type="text" id="new_dob" name="new_dob" value="<?php echo $dob; ?>"><br>
 
-        <label for="new_fullname">New Full Name:</label>
-        <input type="text" id="new_fullname" name="new_fullname"><br>
+        <label for="new_fullname">Full Name:</label>
+        <input type="text" id="new_fullname" name="new_fullname" value="<?php echo $fullname; ?>"><br>
 
-        <label for="new_fav_colour">New Favorite Colour:</label>
-        <input type="text" id="new_fav_colour" name="new_fav_colour"><br>
+        <label for="new_fav_colour">Favorite Colour:</label>
+        <input type="text" id="new_fav_colour" name="new_fav_colour" value="<?php echo $fav_colour; ?>"><br>
 
-        <label for="new_fav_subject">New Favorite Subject:</label>
-        <input type="text" id="new_fav_subject" name="new_fav_subject"><br>
+        <label for="new_fav_subject">Favorite Subject:</label>
+        <input type="text" id="new_fav_subject" name="new_fav_subject" value="<?php echo $fav_subject; ?>"><br>
 
         <input type="submit" value="Update">
     </form>
