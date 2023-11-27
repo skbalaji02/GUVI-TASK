@@ -30,13 +30,13 @@ if (!empty($name) && !empty($password)) {
             header('Location: profile.php');
             exit();
         } else {
-            // Invalid credentials - redirect to login with an error message
+            
             header("Location: login.html?error=Invalid username or Password");
             exit();
         }
     }
 } else {
-    // Empty username or password - redirect to login with an error message
+   
     header("Location: login.html?error=Invalid username or Password");
     exit();
 }
